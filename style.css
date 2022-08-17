@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color:  hsl(0, 100%, 74%);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+       
+}
+
+.message{
+    color: #fff;
+    width: 450px;
+   
+}
+
+.form{
+    display:flex;
+    flex-direction: column;
+    box-shadow: 0 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+  
+}
+
+.div-message{
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.message-head{
+    line-height: 1.2em;
+    font-size: 40px;
+}
+
+.message-body{
+    margin-top: 30px;
+}
+
+.box-shadow{
+    box-shadow: 0 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.try{
+    max-width: 100%;
+    background-color: hsl(248, 32%, 49%);
+    display: flex;
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.login-in-form{
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    margin-top: 30px;
+    
+}
+
+.input{
+    height: 50px;
+    margin-top: 20px;
+    padding-left: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    border: 1px solid hsl(249, 10%, 26%);
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    font-weight: 600;
+}
+
+.input:focus{
+    border: 1px solid hsl(249, 10%, 26%) ;
+}
+
+.error-sign{
+    background-image: url(./images/icon-error.svg);
+    background-position-x: 90%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+.input-btn{
+    background-color: hsl(154, 59%, 51%);
+    border: 1px solid hsl(154, 59%, 51%) ;
+    height: 60px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    border-bottom: 3px solid green;
+}
+
+.input-btn:hover{
+    background-color:  hsl(154, 68%, 64%);
+    border: 1px solid  hsl(154, 68%, 64%);
+    border-bottom: 3px solid rgb(85, 185, 85);
+}
+
+.agree{
+    font-size: 10px;
+    text-align: center;
+    padding-top: 20px;
+    color: hsl(246, 25%, 77%);
+}
+
+.terms{
+    color: hsl(0, 100%, 74%);
+    text-decoration: none ;
+    
+}
+
+span{
+    font-size: 10px;
+    color: hsl(0, 100%, 74%);
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 10px;
+    font-style: italic;
+    opacity: 0;
+    margin-right: 5px;
+}
+
+@media screen and (max-width : 400px) {
+    body{
+    background-image: url(./images/bg-intro-mobile.png);
+    height: 200vh;
+    }
+    .container{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200vh;
+        width: 400px;
+        padding: 20px;
+
+    }
+
+    .message{
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .message-head{
+        font-size: 33px;
+    }
+
+    .message-body{
+        font-size: 18px;
+    }
+
+    .try{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        padding: 20px 90px;
+        text-align: center;
+    }
+
+    .input-btn{
+        font-size: 16px;
+    }
+
+    .agree{
+        font-size: 13px;
+    }
+}
